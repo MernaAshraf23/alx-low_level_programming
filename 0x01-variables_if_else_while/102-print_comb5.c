@@ -13,10 +13,10 @@ int main(void)
 	int firstDigit = 0;
 	int secondDigit;
 
-	while (firstDigit <= 9)
+	while (firstDigit <= 99)
 	{
 		secondDigit = firstDigit;
-		while (secondDigit <= 9)
+		while (secondDigit <= 99)
 		{
 			if (secondDigit != firstDigit)
 			{
