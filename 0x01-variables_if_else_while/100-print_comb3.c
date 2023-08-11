@@ -24,7 +24,7 @@ int main(void)
 			if (digit1 + digit2 != 17)
 			{
 				putchar(',');
-				putchat(' ');
+				putchar(' ');
 			}
 			digit2++;
 		}
