@@ -37,7 +37,7 @@ int main(void)
 	unsigned long fib1 = 1, fib2 = 2, sum, mx = 100000000;
 	unsigned long f1o = 0, f2o = 0, sumo = 0;
 
-	for (count = 1; coint <= 98; count++)
+	for (count = 1; count <= 98; count++)
 	{
 		if (f1o > 0)
 			printf("%ld", f1o);
