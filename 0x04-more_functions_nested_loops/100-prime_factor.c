@@ -8,17 +8,21 @@
 
 int main(void)
 {
-	long i, largest;
-	long num = 612852475143;
+	long int i, largest;
+	long int num = 612852475143;
 
-	for (i = 1; i <= num; i++)
+	for (i = 0; i <= num ; i++)
 	{
 		if (num % i == 0)
 		{
+			if (num == i)
+			{
+				printf("%d\n", i);
+				break;
+			}
 			largest = num / i;
 			num = largest;
 		}
 	}
-	printf("%d\n", largest);
 	return (0);
 }
