@@ -8,21 +8,25 @@
 
 int main(void)
 {
-	long int i, largest;
+	long int div = 2;
 	long int num = 612852475143;
+	long int largest;
 
-	for (i = 0; i <= num ; i++)
+	while (num != 0)
 	{
-		if (num % i == 0)
+		if (num % div != 0)
+			div = div + 1;
+		else
 		{
-			if (num == i)
+			largest = num;
+			num = num / div;
+			if (num == 1)
 			{
-				printf("%d\n", i);
+				printf("%ld\n", largest);
 				break;
 			}
-			largest = num / i;
-			num = largest;
 		}
 	}
+
 	return (0);
 }
