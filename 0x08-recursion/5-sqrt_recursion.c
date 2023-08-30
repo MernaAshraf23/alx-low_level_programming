@@ -2,18 +2,18 @@
 #include <stdio.h>
 
 /**
- * sqrt - function retuen square
+ * _sqrt - function retuen square
  * @n: input parameter
  * @x: input parameter value
  * Return: int
 */
 
-int sqrt(int n, int x)
+int _sqrt(int n, int x)
 {
 	if (x * x == n)
 		return (x);
 	else if (x * x < n)
-		return (sqrt(n, x + 1));
+		return (_sqrt(n, x + 1));
 	else
 		return (-1);
 }
@@ -28,5 +28,5 @@ int sqrt(int n, int x)
 
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1));
+	return (_sqrt(n, 1));
 }
