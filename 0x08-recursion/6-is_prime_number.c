@@ -10,7 +10,7 @@
 
 int check_isPrime(int n, int x)
 {
-	if (x >= n || n > 1)
+	if (x >= n && n > 1)
 		return (1);
 	else if (n % x == 0 || n <= 1)
 		return (0);
